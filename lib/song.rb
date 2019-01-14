@@ -3,6 +3,9 @@ class Song
   attr_reader(:genre,:artist)
   @@all=[]
 
+  extend(Concerns::Findable)
+
+
   def initialize(name,artist=nil,genre=nil)
     @name=name
     self.artist=artist unless artist == nil
@@ -39,6 +42,20 @@ class Song
     end
   end
 
+  def self.new_from_filename(filename)
+    artist_name=filename.split(' - ')[0]
+    song_name=filename.split(' - ')[1]
+    genre_together=filename.split(' - ')[2]
+    genre_name=genre_together.split('.')[0]
+    song=Song.find_or_create_by_name(song_name)
+    artist=Artist.find_or_create_by_name(artist_name)
+    genre=Genre.find_or_create_by_name(genre_name)
+    song.artist=artist
+    song.genre=genre
+    song
+  end
 
-
+  def self.create_from_filename(filename)
+    new_from_filename(filename)
+  end
 end
