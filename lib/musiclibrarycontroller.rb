@@ -37,8 +37,8 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     artist_name=gets.chomp
 
-    artist=Artist.find_or_create_by_name
-    
+    artist=Artist.find_or_create_by_name(name)
+
 
   end
 
