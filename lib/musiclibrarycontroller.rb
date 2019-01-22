@@ -21,4 +21,7 @@ class MusicLibraryController
     user_input= gets.chomp until user_input == "exit"
   end
 
+  def list_songs
+  end
+
 end
