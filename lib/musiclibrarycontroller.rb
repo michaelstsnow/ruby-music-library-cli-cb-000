@@ -23,10 +23,6 @@ class MusicLibraryController
 
   def list_songs
     Song.all.sort_by{|song| song.name}.each_with_index { |song, index| puts "#{index+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
-
-
-    #expect($stdout).to receive(:puts).with("1. Thundercat - For Love I Come - dance")
-
   end
 
   def list_artists
