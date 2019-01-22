@@ -1,9 +1,11 @@
 class MusicImporter
-  attr_accessor(:path,:directory)
+  attr_accessor(:path,:directory,:import)
 
   def initialize(path)
     @path=path
     @directory=Dir.new("#{path}")
+    @import=true
+    self
   end
 
   def files
