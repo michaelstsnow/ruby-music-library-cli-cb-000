@@ -58,7 +58,6 @@ class MusicLibraryController
       puts "Playing #{song_list[song_number-1].name} by #{song_list[song_number-1].artist.name}"
     else
     end
-
   end
 
 end
