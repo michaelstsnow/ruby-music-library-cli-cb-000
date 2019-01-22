@@ -26,7 +26,7 @@ class MusicLibraryController
 
 
     #expect($stdout).to receive(:puts).with("1. Thundercat - For Love I Come - dance")
-  
+
   end
 
   def list_artists
