@@ -38,6 +38,7 @@ class MusicLibraryController
     artist_name=gets.chomp
 
     artist=Artist.find_or_create_by_name(name)
+    artist.songs
 
 
   end
