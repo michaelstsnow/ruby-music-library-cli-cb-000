@@ -13,7 +13,10 @@ class MusicImporter
 
   def import
     music_files=self.files
-    music_files.each do 
+    music_files.each do { |song_info
+      |
+      
+    } 
   end
 
 end
