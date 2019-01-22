@@ -53,6 +53,7 @@ class MusicLibraryController
     #song_list=self.list_songs
     puts "Which song number would you like to play?"
     song_number=gets.chomp
+    song_list=Song.all.sort_by{|song| song.name}
     puts "Playing #{playing_song.name} by #{playing_song.artist.name}"
 
   end
