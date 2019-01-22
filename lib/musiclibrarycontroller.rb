@@ -39,7 +39,7 @@ class MusicLibraryController
 
     artist=Artist.find_or_create_by_name(name)
     artists_songs=artist.songs
-    artists_songs.sort_by{ |song| song.name }.each_with_index{ |song, index| puts "#{index+1}. #{song.name} - #{song.name} - #{song.genre.name}"}
+    artists_songs.sort_by{ |song| song.name }.each_with_index{ |song, index| puts "#{index+1}. #{song.name} - #{song.genre.name}"}
 
 
   end
