@@ -2,6 +2,7 @@ class MusicLibraryController
 
   attr_accessor()
 
-  def initialize
+  def initialize(path)
+    
   end
 end
