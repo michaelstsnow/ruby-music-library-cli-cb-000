@@ -59,7 +59,9 @@ class MusicLibraryController
 
   def valid_song_number?
     if self == 0 || self > Songs.all.size
+      return false
     else
+      return true
     end
   end
 
