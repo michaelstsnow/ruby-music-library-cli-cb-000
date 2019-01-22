@@ -12,6 +12,7 @@ class MusicImporter
   end
 
   def import
+    music_files=self.files
   end
 
 end
