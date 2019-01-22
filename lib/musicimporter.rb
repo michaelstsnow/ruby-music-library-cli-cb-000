@@ -11,4 +11,7 @@ class MusicImporter
     music_files=files.select{ |file_name| file_name.include?(".mp3") }
   end
 
+  def import
+  end
+
 end
