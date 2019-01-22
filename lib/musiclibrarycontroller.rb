@@ -45,6 +45,7 @@ class MusicLibraryController
     puts "Please enter the name of a genre:"
     genre_name=gets.chomp
     genre=Genre.find_or_create_by_name(genre_name)
+    genre_songs=genre.songs
   end
 
   def play_song
