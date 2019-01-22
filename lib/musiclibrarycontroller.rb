@@ -50,7 +50,7 @@ class MusicLibraryController
   end
 
   def play_song
-    list_songs
+    self.list_songs
     puts "Which song number would you like to play?"
     song_number=gets.chomp
 
