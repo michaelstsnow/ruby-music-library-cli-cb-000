@@ -18,7 +18,11 @@ class MusicLibraryController
     puts "To quit, type \'exit\'."
     puts "What would you like to do?"
     user_input=nil
-    user_input= gets.chomp until user_input == "exit"
+    until user_input == "exit" do
+      user_input=gets.chomp 
+
+    end
+      
   end
 
   def list_songs
@@ -59,5 +63,8 @@ class MusicLibraryController
     else
     end
   end
+
+
+  
 
 end
