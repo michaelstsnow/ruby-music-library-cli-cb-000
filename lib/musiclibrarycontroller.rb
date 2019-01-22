@@ -22,12 +22,12 @@ class MusicLibraryController
       user_input=gets.chomp
 
       case user_input
-      when list_songs
-      when list_artists
-      when list_genres
-      when lists_artist
-      when list genre
-      when play_song
+      when "list songs"
+      when "list artists"
+      when "list genres"
+      when "list artist"
+      when "list genre"
+      when "play song"
       end
 
     end
