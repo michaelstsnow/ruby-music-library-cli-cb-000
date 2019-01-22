@@ -30,6 +30,9 @@ class MusicLibraryController
   def list_genres
   end
 
+  def list_songs_by_artist
+  end
+
   def play_song
   end
   
