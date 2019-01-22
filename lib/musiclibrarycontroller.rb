@@ -19,10 +19,21 @@ class MusicLibraryController
     puts "What would you like to do?"
     user_input=nil
     until user_input == "exit" do
-      user_input=gets.chomp 
+      user_input=gets.chomp
+
+      case user_input
+      when list_songs
+      when list_artists
+      when list_genres
+      when lists_artist 
+      when list genre
+      when play_song
+      end
+        
+        
 
     end
-      
+
   end
 
   def list_songs
@@ -65,6 +76,6 @@ class MusicLibraryController
   end
 
 
-  
+
 
 end
