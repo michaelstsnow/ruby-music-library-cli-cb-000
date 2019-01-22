@@ -57,5 +57,8 @@ class MusicLibraryController
     #puts "Playing #{playing_song.name} by #{playing_song.artist.name}"
   end
 
+  def valid_song_number
+  end
+
 
 end
