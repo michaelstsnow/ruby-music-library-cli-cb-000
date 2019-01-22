@@ -54,7 +54,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     song_number=gets.chomp
     playing_song=song_list[song_number-1]
-
+    puts "Playing #{playing_song.name} by #{playing_song.artist.name}"
   end
 
 
