@@ -22,7 +22,14 @@ class MusicLibraryController
   end
 
   def list_songs
-    
+    Song.all.each_with_index { |song, index| puts "#{index+1}."}
+
+
+    expect($stdout).to receive(:puts).with("1. Thundercat - For Love I Come - dance")
+    expect($stdout).to receive(:puts).with("2. Real Estate - Green Aisles - country")
+    expect($stdout).to receive(:puts).with("3. Real Estate - It's Real - hip-hop")
+    expect($stdout).to receive(:puts).with("4. Action Bronson - Larry Csonka - indie")
+    expect($stdout).to receive(:puts).with("5. Jurassic 5 - What's Golden - hip-hop")
   end
 
   def list_artists
