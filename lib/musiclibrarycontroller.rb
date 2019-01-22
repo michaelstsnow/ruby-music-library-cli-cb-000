@@ -53,21 +53,8 @@ class MusicLibraryController
     #song_list=self.list_songs
     puts "Which song number would you like to play?"
     song_number=gets.chomp
-    if song_number.valid_song_number?
-      #playing_song=Song.all.sort_by{|song| song.name}[song_number-1]
-      puts "Playing #{playing_song.name} by #{playing_song.artist.name}"
+    puts "Playing #{playing_song.name} by #{playing_song.artist.name}"
 
-    else
-    end
   end
-
-  def valid_song_number?
-    if self == 0 || self > Songs.all.size
-      return false
-    else
-      return true
-    end
-  end
-
 
 end
